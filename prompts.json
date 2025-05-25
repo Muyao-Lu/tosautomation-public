@@ -1,0 +1,72 @@
+{
+  "p": {
+    "normal": {
+      "default-prompts": {
+        "default-prompt-head": "Simplify the following privacy policy by extracting key points and converting legal jargon to simple english.\n        Note that the privacy policy may contain text that needs to be omitted, such as headers or advertisements. If there is anything that doesn't make sense\n        in the context of the privacy policy, ignore it. Make the text understandable to a ",
+        "default-prompt-middle": " Format with HTML tags instead of markdown. Bold or underline important elements and temrs, and add emojis to headers for better visual effect. \n        Output should be in bullet point form, with no more than 2 points per section, and no more than 2 sentences per point. Please follow the following format:\n        \n        <h1>Summary:</h1>\n            ### Provide a short summary of the privacy policy\n        <h1>Points:</h1>\n            <h2>Information</h2>\n                ### What the company does with your information. How do they collect it? How is it stored? How is it used?\n            <h2>Cookies</h2>\n                ### How are cookies used? Can you opt out?\n            <h2>User Rights & Deleting Information</h2>\n                ### What rights do users have? How can they delete their information? What processes are in place for disputes?\n            <h2>Updates</h2>\n                ### How often is this policy updated? How will users be notified?",
+        "default-prompt-tail": "<h1>Takeaways:</h1>\n            ### Key takeaways from the privacy policy\n        \n        Privacy Policy to Simplify: \n        ###\n        {policy}\n        ###"
+      },
+      "additional-prompts": {
+        "additional-prompt-head": "<h1>Additional Points:</h1>",
+        "children": "<h2>Children's Privacy</h2>\n            ### Points relating to children's privacy\n",
+        "region_spec": "<h2>Region Specific Information</h2>\n            ### Points relating to additional privacy constraints in a specific region (EX: Privacy in the European Union)\n",
+        "history": "<h2>History</h2>\n            ### Summary of the history of the company in regards to privacy and adhering to their privacy policy\n"
+      },
+      "language-levels": {
+        "elementary": "elementary school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "middle": "middle school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "high": "high school student. You may use common legal standards or abbreviations, but make sure to include a brief explanation for anything that may be hard to grasp.",
+        "university": "university student. Legal language and abbreviations can be used, though make sure to include a concise explanation for any uncommon standards or laws that are encountered",
+        "teacher": "middle school student. Respond as if you were a teacher, giving short explanations for any hard to grasp topics.",
+        "monkey": "monkey. Make sure to add screeching or hooting sounds regularly. Use grammar understandable to a 3 year old, and feel free to go on long rants about bananas."
+      }
+    },
+    "short": {
+      "normal": {
+        "short-head": "Simplify the following privacy policy into a 3 sentence TLDR. Make the complexity of the language understandable to a",
+        "short-tail": " If any formatting (bolding, underlining, etc) is to be done, use html tags (<b>, <em>) instead of markdown. Put everything into a html <p> tag. Bold, underline, or highlight important elements, as well as add emojis to headers. Privacy Policy to simplify: ### {policy} ###"
+      },
+      "language-levels": {
+        "elementary": "elementary school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "middle": "middle school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "high": "high school student. You may use common legal standards or abbreviations, but make sure to include a brief explanation for anything that may be hard to grasp.",
+        "university": "university student. Legal language and abbreviations can be used, though make sure to include a concise explanation for any uncommon standards or laws that are encountered",
+        "teacher": "middle school student. Respond as if you were a teacher, giving short explanations for any hard to grasp topics.",
+        "monkey": "monkey. Make sure to add screeching or hooting sounds regularly. Use grammar understandable to a 3 year old, and feel free to go on long rants about bananas."
+      }
+    }
+  },
+  "t": {
+    "normal": {
+      "default-prompts": {
+        "default-prompt-head": "Simplify the following terms of service by extracting key points and converting legal jargon to simple english.\n        Note that the terms of service may contain text that needs to be omitted, such as headers or advertisements. If there is anything that doesn't make sense\n        in the context of the terms of service, ignore it. Make the text understandable to a ",
+        "default-prompt-middle": " Format with HTML tags instead of markdown. Bold, underline, or highlight important elements, as well as add emojis to headers for better visual effect.\n        Output should be in bullet point form, with no more than 2 points per section, and no more than 2 sentences per point. Please follow the following format:\n        \n        <h1>Summary:</h1>\n            ### Provide a short summary of the terms of service\n        <h1>Points:</h1>\n            <h2>Information and Cookies</h2>\n                ### What the company does with your information. How do they collect it? How is it stored? How is it used? How are cookies used to collect and store your data? \n            <h2>Rules and Regulations</h2>\n                ### What rules apply to users? What happens if these rules are broken?\n            <h2>User Rights</h2>\n                ### What rights do users have for arbitration and over their own information?\n            <h2>Updates</h2>\n                ### How often is this tos? How will users be notified? \n            <h2>Denial of Service</h2>\n                ### How can the company deny the user service. Why may this be done\n            <h2>Objections</h2>\n                ### What can be done if you don't agree to these terms. Will you still be able to use their services, or will you be barred?",
+        "default-prompt-tail": "<h1>Takeaways:</h1>\n            ### Key takeaways from the terms of service\n        \n        Terms of Service to Simplify: \n        ###\n        {policy}\n        ###"
+      },
+      "additional-prompts": {
+      },
+      "language-levels": {
+        "elementary": "elementary school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "middle": "middle school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "high": "high school student. You may use common legal standards or abbreviations, but make sure to include a brief explanation for anything that may be hard to grasp.",
+        "university": "university student. Legal language and abbreviations can be used, though make sure to include a concise explanation for any uncommon standards or laws that are encountered",
+        "teacher": "middle school student. Respond as if you were a teacher, giving short explanations for any hard to grasp topics.",
+        "monkey": "monkey. Make sure to add screeching or hooting sounds regularly. Use grammar understandable to a 3 year old, and feel free to go on long rants about bananas."
+      }
+    },
+    "short": {
+      "normal": {
+        "short-head": "Simplify the following terms of service into a 3 sentence TLDR. Make the complexity of the language understandable to a",
+        "short-tail": "If any formatting (bolding, underlining, etc) is to be done, use html tags (<b>, <em>) instead of markdown. Put everything into a html <p> tag. Bold, underline, or highlight important elements, as well as add emojis to headers to better visual affect. Terms of Service to simplify: ### {policy} ###"
+      },
+      "language-levels": {
+        "elementary": "elementary school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "middle": "middle school student without any prior knowledge of legal standards, abbreviations, etc...",
+        "high": "high school student. You may use common legal standards or abbreviations, but make sure to include a brief explanation for anything that may be hard to grasp.",
+        "university": "university student. Legal language and abbreviations can be used, though make sure to include a concise explanation for any uncommon standards or laws that are encountered",
+        "teacher": "middle school student. Respond as if you were a teacher, giving short explanations for any hard to grasp topics.",
+        "monkey": "monkey. Make sure to add screeching or hooting sounds regularly. Use grammar understandable to a 3 year old, and feel free to go on long rants about bananas."
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+#result{
+    color: black !important;
+    padding: 5vmin;
+}
+#result h1, #result h2, #result li, #result p{
+    background-color: inherit;
+    border: none;
+    color: black !important;
+    box-shadow: none;
+
+
+}
+
+#result h1, #result h2 {
+    text-align: center;
+}
+#result h1 {
+
+    font-size: 7vmin;
+}
+
+#result h2 {
+
+    font-size: 5vmin;
+}
+
+#result li, #result p {
+
+    font-size: 3vmin;
+    text-align: left;
+}
+

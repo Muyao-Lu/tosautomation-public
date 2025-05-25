@@ -1,0 +1,47 @@
+{
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "scripts.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "sidebar-styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "response-styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "server/main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "server/ai.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "server/convert.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "server/scraper.py",
+      "use": "@vercel/python"
+    }
+    
+  ],
+  "routes": [
+    {
+      "src": "/server/(.*)",
+      "dest": "server/main.py"
+    }
+  ]
+}

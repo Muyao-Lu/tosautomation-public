@@ -1,0 +1,307 @@
+/* border color: #019ce0
+   textbox background: #65ddef
+   body bg: #b3ecff*/
+
+
+@media screen and (max-width: 1285px) {
+    label[for="link"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    #link{
+        display: block !important;
+        margin: 10% !important;
+        justify-self: center;
+    }
+}
+div, h2, h3, button, #link{
+    border-radius: 10px;
+}
+
+p, label{
+    color: navy;
+    font-size: 1.75vmin;
+}
+
+body {
+    margin: 0;
+}
+#main, #sidebar {
+
+    color: #b3ecff;
+    font-family: sans-serif;
+
+}
+
+#main{
+    background-color: #e6feff;
+    padding: 5%;
+}
+
+
+#top-bar {
+    background-color: #464747;
+    padding: 3vh;
+}
+
+.checkbox-section{
+    padding: 5%;
+}
+
+#heading-text {
+    color: #ffffff;
+    text-align: left;
+    font-family: arial, sans-serif;
+    display: inline-block;
+    height: 10vmin;
+    line-height: 100%;
+    vertical-align: middle;
+    padding-left: 1.25%;
+}
+
+#link-settings-box, #results-box {
+    padding: 10vmin;
+    background-color: #b3ecff;
+}
+
+#link-settings-box, #results-box{
+    margin: 5vmin;
+}
+
+#additional-settings-box{
+    height: 100%;
+}
+
+#result {
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: warp;
+    background-color: #e6feff;
+    border: 3px solid black;
+}
+
+#link {
+    font-size: 3vmin;
+    width: 60%;
+    border: 1px solid #68c1e3;
+    background-color: #99e5ff;
+    color: #00bfff;
+    margin-left: 10%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.1s, transform 0.1s;
+}
+
+#link:hover {
+    background-color: #80dfff;
+    transform: scale(1.01);
+}
+
+.question {
+    display: inline;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.question, h2 {
+    border: 2px solid #0082f0;
+}
+
+.question, h2, h3{
+    color: #199EF3;
+    text-align: center;
+}
+
+h2, h3 {
+    width: 80%;
+    margin: 30px 20%;
+    padding: 2.5vh 0;
+    /* background-color: #35d6ed; */
+    justify-self: center;
+
+}
+
+h2 {
+    font-size: 3.5vmin;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 3vmin;
+}
+
+p {
+    background-color: #68c1e3;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#submit-button {
+    background-color: #65ddef;
+    border: solid #19c5ff;
+    width: 50%;
+    margin: 40px 25%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: navy;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#submit-button:hover {
+    background-color: #35d6ed;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 5vmin;
+  width: 80%;
+  margin: auto 10%;
+
+}
+
+.checkmark, .container input{
+
+  border: 2px solid black;
+
+  height: 3vmin;
+  width: 3vmin;
+  margin: auto;
+
+
+}
+
+.container input[type="radio"] ~ .checkmark{
+    border-radius: 100% !important;
+}
+
+.container input:disabled ~ .checkmark{
+    background-color: #5e819d;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 100%;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  display: inline;
+  border: 2px solid black;
+  position: absolute;
+  left: 100%;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #79BAEC;
+  transform: scale(1.1);
+
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: dodgerblue;
+
+}
+
+label{
+    display: inline-block;
+
+    vertical-align: middle;
+    line-height: 5vmin;
+    height: 5vmin;
+}
+
+#slider-box{
+    height: 7vmin;
+    width: 80%;
+    margin: 2% 10%;
+}
+#slider{
+    border: 2px solid black;
+    width: 8vmin;
+    height: 4vmin;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 1vmin 0;
+
+}
+
+#tos, #privacy{
+    all: initial;
+    width: 4vmin;
+    height: 4vmin;
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#tos:checked, #privacy:checked{
+    background-color: dodgerblue;
+    opacity: 1;
+}
+
+#tos{
+    float: left;
+
+}
+
+#privacy{
+    float: right;
+}
+
+#slider:hover{
+    background-color: #79BAEC;
+}
+
+#slider-box label{
+    height: 7vmin;
+    width: 15vmin;
+    line-height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+#centerer{
+    margin: auto;
+    width: 45vmin;
+}
+
+
+
+#thinking {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to left, #0000ff, #6ac5fe);
+    animation: rotate 2.5s infinite;
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(720deg);
+    }
+}
+
+
+img{
+    width: 10vmin;
+    height: 10vmin;
+    display: inline;
+}

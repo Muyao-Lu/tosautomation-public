@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="response-styles.css">
+        <link rel="stylesheet" href="sidebar-styles.css">
+    </head>
+    <body>
+        <nav id="top-bar">
+
+            <img src="https://github.com/Muyao-Lu/tosautomation-assets/raw/main/image.png">
+            <h1 id="heading-text"> Automation</h1>
+        </nav>
+
+
+        <div id="main">
+            <form onsubmit="return false">
+                <div id="link-settings-box">
+                    <h2>Settings</h2>
+                    <h3>Link Settings</h3>
+                    <label for="link">Website link</label>
+
+                    <input type="text" id="link" name="link" required><br>
+
+                    <h3>Document Type</h3>
+                    <div id="slider-box">
+                        <div id="centerer">
+                            <label for="tos">Terms of Service</label>
+                            <div id="slider">
+                                <input type="radio" id="tos" name="doctype" onclick="disable_privacy_mods();">
+                                <input type="radio" id="privacy" name="doctype" checked onclick="enable_privacy_mods();">
+                            </div>
+
+                            <label for="privacy">Privacy Policy</label>
+                        </div>
+
+
+                    </div>
+
+
+                    <button onclick="loadRequest(getTextboxContentById('link'))" type="submit" id="submit-button">Submit</button>
+                </div>
+
+
+
+                <div id="results-box">
+                    <h2>Result</h2>
+                    <div id="result">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="sidebar">
+            <input type="checkbox" id="sidebar-button">
+            <div id="button-image"></div>
+            <form>
+                <div id="additional-settings-box">
+                    <h2>Additional settings</h2>
+                    <h3>More sections</h3>
+                    <p>Select one of the checkboxes below to add more sections to the summary</p>
+
+                    <div class="checkbox-section">
+                        <div class="container">
+                            <label for="children">Children's Privacy</label>
+                            <input type="checkbox" id="children" name="additional">
+                            <span class="checkmark"></span>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <label for="region_spec">Region Specific Info</label>
+                            <input type="checkbox" id="region_spec" name="additional">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="container">
+                            <label for="history">Company History</label>
+                            <input type="checkbox" id="history" name="additional">
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+
+
+
+                    <h3>Language Settings & Tone</h3>
+                    <p>Modify how the summary will be worded, and the complexity of the response</p>
+                    <div class="checkbox-section">
+                        <div class="container">
+                            <label for="elementary">Elementary School</label>
+                            <input type="radio" id="elementary" name="lang">
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="middle">Middle School</label>
+                            <input type="radio" id="middle" name="lang" checked>
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="high">High School</label>
+                            <input type="radio" id="high" name="lang">
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="university">University</label>
+                            <input type="radio" id="university" name="lang">
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="teacher">Teacher</label>
+                            <input type="radio" id="teacher" name="lang">
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="monkey">Monkey &#128018;</label>
+                            <input type="radio" id="monkey" name="lang">
+                            <span class="checkmark"></span>
+                        </div>
+
+                    </div>
+
+
+                    <h3>Length</h3>
+                    <p>Length of summary</p>
+                    <div class="checkbox-section">
+
+                        <div class="container">
+                            <label for="tldr">3 Sentence TLDR</label>
+                            <input type="radio" id="tldr" name="len" onclick="disable_privacy_mods();">
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="container">
+                            <label for="summary">Summary (default)</label>
+                            <input type="radio" id="summary" name="len" checked onclick="enable_privacy_mods();">
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+
+        <script src="scripts.js"></script>
+
+    </body>
+</html>

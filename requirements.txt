@@ -1,0 +1,6 @@
+openai~=1.78.0
+uvicorn~=0.34.2
+fastapi~=0.115.12
+bs4~=0.0.2
+beautifulsoup4~=4.13.4
+google-genai

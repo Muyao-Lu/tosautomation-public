@@ -1,0 +1,104 @@
+#additional-settings-box{
+    opacity: 0;
+    background-color: #464747;
+    border: 3px solid black;
+    border-top-right-radius: 0;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#sidebar{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#sidebar label {
+    color: #b5e2ff !important;
+    font-size: 1.5vmin;
+}
+
+#sidebar h2{
+    font-size: 3.5vmin;
+    border: none;
+    box-shadow: none;
+
+}
+
+#sidebar h3{
+    font-size: 3vmin;
+}
+
+#sidebar h2, #sidebar h3{
+    margin: auto;
+    width: 80%;
+}
+#sidebar-button{
+    all: initial;
+    background-color: white;
+    margin-left: calc(100% - var(--dimensions));
+    z-index: 1;
+    opacity: 0;
+
+}
+
+#button-image, #sidebar-button{
+    --dimensions: 10vmin;
+    height: var(--dimensions);
+    width: var(--dimensions);
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1%;
+}
+
+#button-image{
+    background-image: url("https://github.com/Muyao-Lu/tosautomation-assets/raw/main/wrench.png");
+    background-size: contain;
+    animation: reverse-rotate-wrench 0.1s linear;
+}
+
+
+
+#sidebar-button:hover ~ #button-image{
+    transform: scale(1.1);
+
+}
+
+#sidebar-button:checked ~ #button-image{
+    animation: rotate-wrench 0.1s linear;
+    transform: rotate(45deg);
+
+}
+
+
+#sidebar:has(#sidebar-button:checked){
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+#sidebar-button:checked ~ form #additional-settings-box{
+    opacity: 1;
+    width: auto;
+}
+
+@keyframes rotate-wrench{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes reverse-rotate-wrench{
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
